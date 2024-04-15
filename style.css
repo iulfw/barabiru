@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    font-family: "Baloo 2";
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #3068E1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.nav a {
+    color: white;
+    size: 25px;
+    margin-right: 35px;
+    text-decoration: none;
+}

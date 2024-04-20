@@ -1,0 +1,155 @@
+/* Header */
+
+header {
+    display: flex;
+    height: 50vh;
+    background: linear-gradient(0deg, rgba(253,253,253,1) 10%, rgba(253,253,253,0.6) 50%, rgba(253,253,253,0.2) 70%, rgba(253,253,253,0) 100%), url("../assets/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header-title a {
+    font-size: 90px;
+    color: #3068e1;
+}
+
+
+/* Menu */
+
+.menu {
+    background: #fdfdfd;
+    display: grid;
+    padding: 3.5% 10% 5% 10%;
+}
+
+#menu-title {
+    text-align: center;
+    font-size: 54px;
+    color: #3068e1;
+    margin-bottom: 25px;
+}
+
+.menu a {
+    margin: 8px;
+    background: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.05);
+    font-size: 20px;
+    text-align: center;
+    color: #3068e1;
+    text-decoration: none;
+    height: 15vh;
+    width: 100%;
+    align-content: center;
+    font-size: 24px;
+}
+
+.menu a:hover {
+    background: white;
+    color: #3068e1;
+    transition: all 0.3s;
+    border-color: #3068e1;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#menu-row {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+/* Menu Cards */
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5% 10% 5% 10%;
+    background: #fdfdfd;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 68px;
+    color: #3068e1;
+    width: 25%;
+}
+
+.card-m {
+    width: 75%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.card-s {
+    background: #f9fbff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-info {
+    padding: 16px 24px 16px 24px;
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    line-height: 1.1;
+}
+
+.card-price {
+    font-size: 40px;
+    font-weight: 300;
+    color: #3068e1;
+}
+
+#k {
+    font-size: 20px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 20em;
+        display: block;
+        margin: 1em;
+    }
+
+    body {
+        display: flex;
+        align-items: flex-start;
+    }
+}

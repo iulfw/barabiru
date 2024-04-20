@@ -1,0 +1,114 @@
+/* Header */
+
+header {
+    display: flex;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0.7) 55%, rgba(255,255,255,0.5) 65%, rgba(255,255,255,0) 75%), url("../assets/header-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-title {
+    align-content: center;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.header-title p {
+    font-size: 88px;
+    line-height: 0.9;
+    color: #3068e1;
+}
+
+.header-button {
+    color: #3068e1;
+}
+
+
+/* Photobox */
+
+.photobox {
+    display: grid;
+    padding: 5% 10% 5% 10%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.photobox-title a {
+    font-size: 54px;
+    color: #3068e1;
+}
+
+.photobox-title img {
+    margin: -10px 0 25px;
+    width: 150px;
+}
+
+.photobox-img {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.photobox-img img {
+    width:calc(100%/3);
+}
+
+.photobox-desc {
+    width: 75%;
+    margin: 0 12.5% 0;
+}
+
+.photobox-desc a {
+    font-size: 22px;
+}
+
+
+/* Claw Machine */
+
+.claw {
+    display: inline-flex;
+    padding: 5% 10% 0 10%;
+    background: #fdfdfd;
+    text-align: left;
+}
+
+.claw-vid {
+    width: 160%;
+    margin-right: 5%;
+}
+
+.claw-vid video {
+    height: 60%;
+    padding-top: -30%;
+}
+
+.claw-content {
+    display: grid;
+}
+
+#title {
+    font-size: 54px;
+    color: #3068e1;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#desc {
+    font-size: 22px;
+}
+
+
+/* TikTok */
+
+.tiktok {
+    padding: 5% 10% 8% 10%;
+    background: #fdfdfd;
+}
+
+.tiktok-vid {
+    display: flex;
+}
+
+.tiktok-vid blockquote {
+    width: calc(100%/3);
+}

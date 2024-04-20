@@ -1,0 +1,35 @@
+/* Header */
+
+header {
+    display: flex;
+    height: 50vh;
+    background: linear-gradient(0deg, rgba(253,253,253,1) 10%, rgba(253,253,253,0.6) 50%, rgba(253,253,253,0.2) 70%, rgba(253,253,253,0) 100%), url("../assets/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header-title a {
+    font-size: 90px;
+    color: #3068e1;
+}
+
+
+/* Embed Insta */
+
+.insta {
+    padding: 5% 10% 5% 10%;
+    background: #fdfdfd;
+}
+
+#insta {
+    height: 60vh;
+    width: 100%;
+    border-radius: 10px;
+}

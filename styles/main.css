@@ -60,9 +60,10 @@ nav {
 /* Footer */
 
 footer {
-    background: #3068e1;
+    background: #fdfdfd;
     position: sticky;
     width: 100%;
+    box-shadow: 0 0.5px 5px 0 rgba(0,0,0,0.1);
 }
 
 .footer {
@@ -79,7 +80,7 @@ footer {
 }
 
 .footer-content p {
-    color: white;
+    color: black;
     font-size: 14px;
     line-height: 1.25;
     text-align: left;

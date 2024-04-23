@@ -43,9 +43,7 @@ header {
 }
 
 .menu-row a:hover {
-    font-size: 26px;
     font-weight: bold;
-    color: #3068e1;
     transition: all .3s;
 }
 
@@ -67,10 +65,10 @@ header {
 }
 
 .card-title {
-    font-size: 60px;
+    font-size: 48px;
+    line-height: 0.8;
     color: #3068e1;
     width: 15%;
-    text-orientation: mixed;
 }
 
 .card-m {
@@ -114,17 +112,25 @@ header {
 }
 
 .card-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: black;
-    line-height: 1;
-    letter-spacing: -1;
+    line-height: 0.8;
+}
+
+.card-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+    margin-top: 8px;
+    line-height: 0.9;
 }
 
 .card-price {
     font-size: 12px;
     font-weight: 500;
     color: #3068e1;
+    margin-top: 5px;
 }
 
 #num {

@@ -70,7 +70,7 @@ footer {
 .footer {
     align-items: center;
     display: flex;
-    padding: 12px 10% 35px 10%;
+    padding: 12px 10% 36px 10%;
     justify-content: space-between;
 }
 
@@ -93,7 +93,7 @@ footer {
 }
 
 #address-2 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #copyright {

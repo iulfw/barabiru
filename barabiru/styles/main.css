@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: "Baloo 2";
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 120px;
+}
+
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    align-items: center;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8% 5px 10%;
+    box-shadow: 0 0.5px 5px 0 rgba(0,0,0,0.1);
+}
+
+.nav-logo img {
+    margin-bottom: -7px;
+    margin-left: -8px;
+    width: 80px;
+}
+
+.nav-page a {
+    color: #3068e1;
+    font-size: 17px;
+    margin-right: 36px;
+    text-decoration: none;
+
+    display: inline-block;
+    position: relative;
+}
+
+#hover:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -7px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #3068e1;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  
+#hover:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+
+/* Footer */
+
+footer {
+    background: #fdfdfd;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0 0.5px 5px 0 rgba(0,0,0,0.1);
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    padding: 12px 10% 36px 10%;
+    justify-content: space-between;
+}
+
+.footer-content img {
+    margin-bottom: -15px;
+    margin-left: -7px;
+    width: 100px;
+}
+
+.footer-content p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: left;
+}
+
+#address-1 {
+    font-weight: bold;
+    line-height: 2.25;
+}
+
+#address-2 {
+    margin-bottom: 20px;
+}
+
+#copyright {
+    opacity: 70%;
+}
+
+#pattern {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

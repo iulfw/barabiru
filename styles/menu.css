@@ -46,8 +46,11 @@ header {
 /* Menu */
 
 .menu {
+    position: sticky;
+    top: 90px;
     background: #fdfdfd;
     padding: 2% 10% 2%;
+    z-index: 99;
 }
 
 .menu-row {
@@ -55,6 +58,10 @@ header {
     padding: 0 10%;
     justify-content: space-between;
     flex: 1;
+    border-radius: 30px;
+    height: 50px;
+    align-items: center;
+    box-shadow: 0 0.5px 5px 0 rgba(0,0,0,0.1);
 }
 
 .menu-row a {
@@ -85,6 +92,7 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    z-index: 98;
 }
 
 .card-title {

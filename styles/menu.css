@@ -26,41 +26,33 @@ header {
 .partner {
     display: grid;
     justify-content: center;
-    padding: 2% 10% 2% 10%;
+    padding: 2% 10% 2%;
     background: #fdfdfd;
 }
 
 .partner p {
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 5px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
 }
 
 .partner-logo img {
-    height: 40px;
-    opacity: 40%;
+    height: auto;
+    width: 360px;
 }
-
-#grab {
-    height: 35px;
-    margin-right: 50px;
-}
-
-.partner-logo img:hover {
-    opacity: 100%;
-}
-
-
 
 
 /* Menu */
 
 .menu {
     background: #fdfdfd;
-    padding: 0 10% 2% 10%;
+    padding: 2% 10% 2%;
 }
 
 .menu-row {
     display: flex;
+    padding: 0 10%;
     justify-content: space-between;
     flex: 1;
 }
@@ -85,7 +77,7 @@ header {
     display: grid;
     align-items: center;
     justify-content: left;
-    padding: 5% 10% 5% 10%;
+    padding: 3% 10% 2%;
     background: #fdfdfd;
 }
 
@@ -102,13 +94,14 @@ header {
     width: 15%;
 }
 
-.card-title p {
-    transform: rotate(-90deg);
-    display: inline-block;
-    transform-origin: left top;
-    margin-top: 150px;
-    white-space: nowrap;
-    position: relative;
+.card-title img {
+    width: auto;
+    height: 28vh;
+    border-radius: 10px;
+    border-color: #3068e1;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0.5px 5px 0 rgba(0,0,0,0.1);
 }
 
 .card-m {

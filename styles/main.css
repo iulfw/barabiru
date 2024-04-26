@@ -57,6 +57,18 @@ nav {
     left: 0; 
 }
 
+a.fa-instagram {
+    background: none;
+    transition: all 0.3s;
+}
+  
+a.fa-instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: #fdfdfd;
+    border-radius: 100%;
+    padding: 0.45em 0.5em;
+}
+
 
 /* Footer */
 

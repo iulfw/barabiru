@@ -21,6 +21,220 @@ header {
 }
 
 
+/* Timeline */
+
+.timeline {
+    display: grid;
+    padding: 5% 10% 2%;
+    background: #fdfdfd;
+}
+
+.tl-line {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+  
+.date {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3068e1;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+  
+.line {
+    position: absolute;
+    height: 2.5px;
+    background-color: rgb(185, 183, 183);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+  
+.date:nth-child(1) {
+    left: 20%;
+}
+  
+.date:nth-child(2) {
+    left: 35.3%;
+}
+     
+.date:nth-child(3) {
+    left: 70.5%;
+}
+
+.tl-cards {
+    display: flex;
+    gap: 70px;
+}
+
+.tl-card  {
+    width: calc(100%/3);
+}
+
+.tl-card-upper {
+    justify-content: space-between;
+    display: flex;
+    align-items: last baseline;
+    margin-bottom: 20px;
+}
+
+.tl-card-upper h1 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0.7;
+}
+
+.tl-card-upper h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.tl-card-upper h3 {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1;
+    color: #3068e1;
+}
+
+.tl-card-lower p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.tl-card-lower img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Owner's Profile */
+
+.profile {
+    padding: 5% 10% 5%;
+    display: grid;
+    text-align: center;
+    background: #fdfdfd;
+}
+
+.profile-title a {
+    font-size: 54px;
+    color: #3068e1;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.owner {
+	display: flex;
+	justify-content: space-between;
+    width: 50%;
+    gap: 30px;
+}
+
+.owner-card {
+    border-radius: 10px;
+    box-shadow: 0 0.5px 5px 0 rgba(0,0,0,0.1);
+	width: 100%;
+}
+
+.upper {
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    background-color: #fdfdfd;
+    overflow: hidden;
+}
+
+.upper::after {
+    position: absolute;
+    width: 150%;
+    height: 80px;
+    bottom: -40px;
+    left: -30%;
+    content: "";
+    background-color: #fdfdfd;
+    transform: rotate(-13deg);
+    transition: all 0.5s;
+}
+
+.upper img {
+    width: 120%;
+}
+
+.upper a {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 30px;
+    text-align: right;
+	text-decoration: none;
+    font-size: 17px;
+    color: black;
+    padding: 15px 0;
+}
+
+.owner-card:hover .upper::after {
+    background: #3068e1;
+}
+
+.owner-card:hover .upper a {
+    color: white;
+    background: none;
+}
+
+.lower {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    text-align: right;
+    transition: all 0.5s;
+    border-radius: 0 0 10px 10px;
+    background-color: #fdfdfd;
+}
+
+.lower::after {
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 2px;
+    background-color: #3068e1;
+    content: "";
+    top: 5px;
+    right: 30px;
+}
+
+.lower h2 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.lower p {
+    font-size: 14px;
+}
+
+.owner-card:hover .lower {
+    background: #3068e1;
+    color: white;
+}
+
+.owner-card:hover .lower::after {
+    background: white;
+}
+
+.message {
+    width: 50%;
+}
+
+
 /* Embed Insta */
 
 .insta {
@@ -32,120 +246,4 @@ header {
     height: 60vh;
     width: 100%;
     border-radius: 10px;
-}
-
-
-/* Owner's Profile */
-
-.crew {
-    padding: 5% 10% 5%;
-}
-
-.crew-title {
-	display: grid;
-}
-
-.owner {
-	display: flex;
-	justify-content: flex-start;
-}
-
-.owner-card {
-    position: relative;
-    margin-right: 30px;
-    transition-duration: 500ms;
-    z-index: 1;
-    border-radius: 10px;
-    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
-	width: 22%;
-}
-
-.owner-card .upper {
-    position: relative;
-    z-index: 1;
-    border-radius: 15px 15px 0 0;
-    background-color: #3068e1;
-    overflow: hidden;
-}
-
-.owner-card .upper::after {
-    transition-duration: 500ms;
-    position: absolute;
-    width: 150%;
-    height: 80px;
-    bottom: -45px;
-    left: -25%;
-    content: "";
-    background-color: #fdfdfd;
-    transform: rotate(-15deg);
-}
-
-.owner-card .upper a {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    bottom: 0;
-    right: 30px;
-    text-align: right;
-	background: none;
-	text-decoration: none;
-    font-size: 16px;
-    color: black;
-    padding: 5px 0;
-}
-
-.owner-card .upper a:hover {
-    color: white;
-}
-
-.owner-card .lower {
-    position: relative;
-    z-index: 1;
-    padding: 30px;
-    text-align: right;
-    transition-duration: 500ms;
-    border-radius: 0 0 15px 15px;
-    background-color: #fdfdfd;
-}
-
-.owner-card .lower::after {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    position: absolute;
-    z-index: 1;
-    width: 50px;
-    height: 3px;
-    background-color: #3068e1;
-    content: "";
-    top: 12px;
-    right: 30px;
-}
-
-.owner-card .lower p {
-    transition-duration: 500ms;
-    font-size: 14px;
-}
-
-.owner-card:hover .upper::after {
-    background-color: #3068e1;
-}
-
-.owner-card:hover .upper a {
-    color: #ffffff;
-}
-
-.owner-card:hover .upper a:hover {
-    color: #ffffff;
-}
-
-.owner-card:hover .lower {
-    background-color: #3068e1;
-}
-
-.owner-card:hover .lower::after {
-    background-color: #fdfdfd;
-}
-
-.owner-card:hover .lower p {
-    color: #ffffff;
 }

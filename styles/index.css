@@ -50,7 +50,7 @@ header {
 }
 
 .photobox-img img {
-    width:calc(100%/3);
+    width: calc(100%/3);
 }
 
 .photobox-desc {

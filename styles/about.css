@@ -79,10 +79,8 @@ header {
 }
 
 .tl-card-upper {
-    justify-content: space-between;
-    display: flex;
-    align-items: last baseline;
-    margin-bottom: 20px;
+    display: grid;
+    margin-bottom: 8px;
 }
 
 .tl-card-upper h1 {
@@ -96,11 +94,9 @@ header {
     font-weight: 300;
 }
 
-.tl-card-upper h3 {
-    font-size: 44px;
-    font-weight: 300;
-    line-height: 1;
-    color: #3068e1;
+.tl-card-lower h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
 .tl-card-lower p {
@@ -230,9 +226,12 @@ header {
     background: white;
 }
 
-.message {
+.staff {
     width: 50%;
+    margin-left: 30px;
 }
+
+
 
 
 /* Embed Insta */

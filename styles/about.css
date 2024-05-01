@@ -21,12 +21,51 @@ header {
 }
 
 
+/* Blockquote */
+  
+.intro {
+    display: flex;
+    padding: 2% 10% 2%;
+    text-align: center;
+    background: #fdfdfd;
+    gap: 70px;
+}
+
+.intro .card {
+    width: 100%;
+    box-shadow: none;
+}
+
+.intro .card h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.intro .card p {
+    font-size: 20px;
+}
+
+.intro .vl {
+    border-left: 1.5px solid #b9b9b9;
+    height: 180px;
+    left: 50%;
+}
+
+
 /* Timeline */
 
 .timeline {
     display: grid;
     padding: 5% 10% 2%;
     background: #fdfdfd;
+}
+
+.tl-title {
+    font-size: 54px;
+    color: #3068e1;
+    text-align: center;
+    margin-bottom: 45px;
 }
 
 .tl-line {
@@ -48,8 +87,8 @@ header {
   
 .line {
     position: absolute;
-    height: 2.5px;
-    background-color: rgb(185, 183, 183);
+    height: 2px;
+    background: #B9B9B9;
     top: 50%;
     transform: translateY(-50%);
     left: 0%;
@@ -119,12 +158,16 @@ header {
     background: #fdfdfd;
 }
 
+.profile-title {
+    margin-bottom: 25px;
+}
+
 .profile-title a {
     font-size: 54px;
     color: #3068e1;
 }
 
-.card {
+.cards {
     display: flex;
     justify-content: space-between;
 }
@@ -136,7 +179,7 @@ header {
     gap: 30px;
 }
 
-.owner-card {
+.card {
     border-radius: 10px;
     box-shadow: 0 0.5px 5px 0 rgba(0,0,0,0.1);
 	width: 100%;
@@ -177,11 +220,11 @@ header {
     padding: 15px 0;
 }
 
-.owner-card:hover .upper::after {
+.card:hover .upper::after {
     background: #3068e1;
 }
 
-.owner-card:hover .upper a {
+.card:hover .upper a {
     color: white;
     background: none;
 }
@@ -208,7 +251,7 @@ header {
     right: 30px;
 }
 
-.lower h2 {
+.lower h1 {
     font-size: 24px;
     line-height: 1.2;
 }
@@ -217,12 +260,12 @@ header {
     font-size: 14px;
 }
 
-.owner-card:hover .lower {
+.card:hover .lower {
     background: #3068e1;
     color: white;
 }
 
-.owner-card:hover .lower::after {
+.card:hover .lower::after {
     background: white;
 }
 
@@ -231,18 +274,40 @@ header {
     margin-left: 30px;
 }
 
+.staff img {
+    max-height: 347px;
+    width: auto;
+}
 
+.staff .upper::after {
+    height: 70px;
+    transform: rotate(0deg);
+}
+
+.staff h1 {
+    font-weight: 300;
+    line-height: 1;
+}
 
 
 /* Embed Insta */
 
 .insta {
-    padding: 5% 10% 5% 10%;
+    padding: 2% 10% 5%;
     background: #fdfdfd;
+    text-align: center;
+}
+
+.insta-title {
+    font-size: 54px;
+    color: #3068e1;
+    margin-bottom: 25px;
 }
 
 #insta {
     height: 60vh;
     width: 100%;
     border-radius: 10px;
+    border-color: #3068e1;
+    border-style: solid;
 }

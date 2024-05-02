@@ -180,6 +180,7 @@ header {
     padding: 5% 10% 0;
     background: #fdfdfd;
     text-align: left;
+    margin-bottom: -18%;
 }
 
 .claw-vid {
@@ -194,6 +195,10 @@ header {
 
 .claw-content {
     width: 60%;
+}
+
+.claw-content img {
+    width: 100%;
 }
 
 #title {

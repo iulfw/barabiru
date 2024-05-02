@@ -1,16 +1,15 @@
 jQuery(document).ready(function($) {
   "use strict";
 
-  // Testimony (Home)
-  $('#customers-testimonials').owlCarousel({
+  $('#reviews').owlCarousel({
       loop: true,
       center: true,
       items: 3,
       margin: 0,
       autoplay: true,
-      dots:true,
-      autoplayTimeout: 8500,
-      smartSpeed: 450,
+      dots: true,
+      autoplayTimeout: 5000,
+      smartSpeed: 750,
       responsive: {
         0: {
           items: 1

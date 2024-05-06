@@ -6,21 +6,45 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    padding: 8% 10% 5%;
 }
 
 .header-title {
     align-content: center;
-    padding-left: 10%;
     text-align: left;
 }
 
-.header-title p {
-    font-size: 88px;
+.header-title h1 {
+    font-size: 94px;
     line-height: 0.9;
     color: #3068e1;
+    font-weight: 300;
 }
 
-.header-button {
+.header-title p {
+    margin-top: 26px;
+    font-size: 24px;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.button {
+    color: white;
+    border: solid 1.5px #3068e1;
+    background: #3068e1;
+    padding: 8px 45px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.7s;
+    margin-top: 60px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+  
+.button:hover {
+    box-shadow: inset 200px 0 0 0 white;
+    border: solid 1.5px #3068e1;
     color: #3068e1;
 }
 
@@ -29,7 +53,7 @@ header {
 
 .reviews {
     background: #fdfdfd;
-    padding: 6% 3% 2%;
+    padding: 7% 3% 5%;
 }
 
 .r-title p {
@@ -54,7 +78,7 @@ header {
 }
 
 .r-content img {
-    border-radius: 50px;
+    border-radius: 0px;
     transform: scale(85%);
 }
 
@@ -139,7 +163,7 @@ header {
 
 .photobox {
     display: grid;
-    padding: 5% 10% 5% 10%;
+    padding: 2% 10% 5%;
     background: #fdfdfd;
     text-align: center;
 }
@@ -177,28 +201,28 @@ header {
 
 .claw {
     display: flex;
-    padding: 5% 10% 0;
+    padding: 2% 10% 5%;
     background: #fdfdfd;
     text-align: left;
     margin-bottom: -18%;
 }
 
 .claw-vid {
-    width: 40%;
+    width: 45%;
     margin-right: 5%;
 }
 
 .claw-vid video {
-    height: 60%;
-    padding-top: -30%;
+    width: 92%;
 }
 
 .claw-content {
-    width: 60%;
+    width: 55%;
 }
 
 .claw-content img {
-    width: 100%;
+    width: 85%;
+    margin-top: 50px;
 }
 
 #title {
@@ -217,7 +241,7 @@ header {
 /* TikTok */
 
 .tiktok {
-    padding: 2% 7% 5%;
+    padding: 21% 7% 5%;
     background: #fdfdfd;
 }
 

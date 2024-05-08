@@ -3,53 +3,85 @@
 
 <head>
 
-  <title>Page Not Found</title>
-  <link rel="icon" href="assets/favicon.png">
-	<link rel="stylesheet" href="styles/main.css">
+	<title>Page Not Found</title>
+	<link rel="icon" href="assets/favicon.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<style>
 
-  <style>
+	body {
+		font-family: "Baloo 2";
+		margin: 0;
+		padding: 0;
+	}
 
-    header {
-      display: block;
-      background: #3068e1;
-      padding: 40vh;
+	.container {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: top;
+		background: #3068e1;
     }
 
-    header p {
-      color: white;
-      text-align: center;
+   .header {
+      	text-align: center;
+    }
+
+   .header p {
+      	color: white;
     }
 
     #line-1 {
-      font-size: 88px;
-      font-weight: bold;
-      line-height: 0.95;
+      	font-size: 168px;
+      	font-weight: bold;
+      	line-height: 1;
+		margin-top: 28vh;
+		margin-bottom: -10px;
     }
 
     #line-2 {
-      font-size: 30px;
+      	font-size: 36px;
+		line-height: 0.1;
+		margin-bottom: 75px;
     }
 
-  </style>
+	#button {
+		color: #3068e1;
+		background: white;
+		padding: 5px 30px;
+		font-size: 18px;
+		font-weight: 300;
+		transition: all 0.3s;
+		margin-top: 50px;
+		border-radius: 100px;
+		text-decoration: none;
+	}
+
+	#button:hover {
+		color: #fdfdfd;
+		background: none;
+		border: #fdfdfd solid 1px;
+	}
+
+  	</style>
 
 </head>
 
 <body>
 
-<header>
-
-  <p id="line-1">oops!</p>
-  <p id="line-2">Page Not Found</p>
-
-</header>
+<div class="container">
+    <header>
+    	<div class="header">
+        	<p id="line-1">oops!</p>
+        	<p id="line-2">Page Not Found</p>
+			<a id="button" href="index.html">Back to <b>Home</b></a>
+      	</div>
+    </header>
+</div>
 
 </body>
 
 </html>
-

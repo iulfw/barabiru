@@ -50,7 +50,7 @@ header {
     top: 90px;
     background: #fdfdfd;
     padding: 2% 10% 2%;
-    z-index: 99;
+    z-index: 9;
 }
 
 .menu-row {
@@ -92,7 +92,7 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
-    z-index: 98;
+    z-index: 8;
 }
 
 .card-title {

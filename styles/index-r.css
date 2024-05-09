@@ -1,0 +1,23 @@
+@media (max-width: 480px) {
+
+    /* Header */
+
+    header {
+        background: linear-gradient(0deg, rgba(253,253,253,1) 0vh, rgba(253,253,253,0.7) 100vh), url("../assets/header-home.jpg");
+        background-size: cover;
+    }
+
+    .header-title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-title h1 {
+        font-size: 64px;
+    }
+
+    .header-title p {
+        font-size: 24px;
+    }
+
+}

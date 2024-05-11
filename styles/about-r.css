@@ -77,16 +77,50 @@
         gap: 20px;
     }
 
+    .upper a {
+        right: 1rem;
+    }
+
+    .upper img {
+        width: 120%;
+    }
+
+    .lower {
+        padding: 2rem 1rem 1rem;
+        text-align: center;
+    }
+
+    .lower::after {
+        right: 1rem;
+        width: 20px;
+    }
+
+    .lower h1 {
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+
     .owner {
-        display: flex;
-        gap: 20px;
+        gap: 0px;
     }
 
     .owner .card {
         width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
 
+    .staff {
+        margin-left: 0;
+        width: 100%;
+    }
 
+    .staff .upper img {
+        width: 100%;
+    }
+    
+    
     /* Embed Insta */
 
     .insta {
@@ -100,6 +134,13 @@
 
     #insta {
         height: 41vh;
+    }
+
+
+    /* Maps */
+
+    .map {
+        padding: 3rem;
     }
 
 }

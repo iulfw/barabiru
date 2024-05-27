@@ -52,44 +52,45 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
   
-    function filterFunction() {
-        const input = document.getElementById("myInput");
-        const filter = input.value.toUpperCase();
-        const div = document.getElementById("myDropdown");
-        const a = div.getElementsByTagName("a");
-        for (let i = 0; i < a.length; i++) {
-            txtValue = a[i].textContent || a[i].innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                a[i].style.display = "";
-            } else {
-                a[i].style.display = "none";
+function filterFunction() {
+    const input = document.getElementById("myInput");
+    const filter = input.value.toUpperCase();
+    const div = document.getElementById("myDropdown");
+    const a = div.getElementsByTagName("a");
+    for (let i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
         }
     }
 }
 
-        //feedback
 
-        var feedback_btn = document.querySelector(".feedback_btn");
-        var wrapper = document.querySelector(".wrapper");
-        var close_btns = document.querySelectorAll(".close_btn");
-        var li_items = document.querySelectorAll("ul li");
+// Feedback
+
+var feedback_btn = document.querySelector(".feedback_btn");
+var wrapper = document.querySelector(".wrapper");
+var close_btns = document.querySelectorAll(".close_btn");
+var li_items = document.querySelectorAll("ul li");
         
-        feedback_btn.addEventListener("click", function () {
-          wrapper.classList.add("active");
-        });
+feedback_btn.addEventListener("click", function () {
+    wrapper.classList.add("active");
+});
         
-        close_btns.forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            wrapper.classList.remove("active");
-          });
-        });
+close_btns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        wrapper.classList.remove("active");
+    });
+});
         
+li_items.forEach(function (item) {
+    item.addEventListener("click", function () {
         li_items.forEach(function (item) {
-          item.addEventListener("click", function () {
-            li_items.forEach(function (item) {
-              item.classList.remove("active");
-            });
-        
-            item.classList.add("active");
-          });
+            item.classList.remove("active");
         });
+        
+        item.classList.add("active");
+    });
+});

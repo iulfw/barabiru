@@ -496,3 +496,13 @@ header {
     opacity: 1;
     transition: all 0.2s ease;
 }
+
+/* Additional Styles for Feedback Section */
+
+.feedback-header {
+    font-size: 54px;
+    color: #3068e1;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 25px;
+}
